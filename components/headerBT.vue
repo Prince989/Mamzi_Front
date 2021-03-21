@@ -43,7 +43,7 @@
         <button class="btn btn-info addbtn d-flex align-items-center" style="font-size: medium"> ثبت آگهی رایگان &nbsp;
           &nbsp;<i
             class="fas fa-plus"></i></button>
-        <img src="@/static/Bingo.png" class="d-flex ml-auto" width="120" height="120">
+        <img src="@/static/mamzi.png" class="d-flex ml-auto" width="76" height="43">
       </div>
       <br>
       <div class="container text-right text-dark" dir="rtl">
