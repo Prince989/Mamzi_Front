@@ -1,15 +1,22 @@
 <template>
-  <mheader>
+  <div>
+    <mheader>
 
-  </mheader>
+    </mheader>
+    <SearchBar>
+
+    </SearchBar>
+  </div>
 </template>
 
 <script>
   import mheader from "../components/mHeader";
-    export default {
-        name: "HomePage",
-      components:{mheader}
-    }
+  import SearchBar from "../components/SearchBar";
+
+  export default {
+    name: "HomePage",
+    components: {mheader, SearchBar}
+  }
 </script>
 
 <style scoped>
