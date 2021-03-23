@@ -95,5 +95,8 @@
     .signup {
       display: none;
     }
+    .mHeader{
+      height: 110px;
+    }
   }
 </style>
