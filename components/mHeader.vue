@@ -1,7 +1,7 @@
 <template>
   <div class="mHeader">
-    <div class="row mheaderT txt flex-nowrap">
-      <div class="col-2 d-flex align-items-center justify-content-start">
+    <div class="row mheaderT txt flex-nowrap m-0">
+      <div class="col-2 d-flex align-items-center justify-content-start p-0">
         <button class="btn bg-transparent p-0 ml-4">
           <img src="@/static/buyIcon.png" height="40px" class="w-auto">
         </button>
@@ -78,6 +78,7 @@
 
   .mheaderT {
     height: 50%;
+    width: 100%;
   }
   .mheaderBT {
     height: 40%;

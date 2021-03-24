@@ -57,7 +57,8 @@
     font-family: "IRANSans Medium";
   }
   .search-icon{
-    font-size:17px;
+    font-size:19px;
+    color: #c9bdbc;
   }
   @media only screen and (max-width: 940px){
     .search-btn{

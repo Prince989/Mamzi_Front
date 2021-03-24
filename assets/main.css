@@ -5,3 +5,6 @@
   font-display: auto;
   src: url('~assets/fonts/IRANSans_Light.ttf') format('truetype');
 }
+.txt{
+  font-family: "IRANSans Medium";
+}

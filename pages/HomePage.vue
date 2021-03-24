@@ -6,6 +6,9 @@
     <SearchBar>
 
     </SearchBar>
+    <main-body>
+
+    </main-body>
   </div>
 </template>
 
