@@ -5,6 +5,13 @@
   font-display: auto;
   src: url('~assets/fonts/IRANSans_Light.ttf') format('truetype');
 }
+.txt-light{
+  font-family: "IRANSans Light";
+}
 .txt{
   font-family: "IRANSans Medium";
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }

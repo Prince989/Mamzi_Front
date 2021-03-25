@@ -7,11 +7,11 @@
     <br>
     <br>
     <div class="container p-4" dir="rtl">
-      <stong>
-        <h4 class="txt text-center">
+        <h3 class="txt text-center">
+          <strong>
           پیش نمایش سه بعدی و سفارش آنلاین غذا از بهترین رستوران ها و فست فود ها
-        </h4>
-      </stong>
+          </strong>
+        </h3>
       <br>
       <p class="txt text-center">
         با استفاده از وبسایت و اپلیکیشن سفارش آنلاین غذای مامزی شما میتونید به راحتی و در سریع ترین زمان ممکن غذای مورد
@@ -19,16 +19,23 @@
         سفارش بدین.
       </p>
     </div>
+
+    <br>
+    <br>
+    <Favorites>
+
+    </Favorites>
   </div>
 </template>
 
 <script>
 
   import MSwiper from "./mSwiper";
+  import Favorites from "./Favorites";
 
   export default {
     name: "mainBody",
-    components: {MSwiper},
+    components: {Favorites, MSwiper},
   }
 </script>
 
