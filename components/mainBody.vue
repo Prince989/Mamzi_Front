@@ -7,11 +7,11 @@
     <br>
     <br>
     <div class="container p-4" dir="rtl">
-        <h3 class="txt text-center">
-          <strong>
+      <h3 class="txt text-center">
+        <strong>
           پیش نمایش سه بعدی و سفارش آنلاین غذا از بهترین رستوران ها و فست فود ها
-          </strong>
-        </h3>
+        </strong>
+      </h3>
       <br>
       <p class="txt text-center">
         با استفاده از وبسایت و اپلیکیشن سفارش آنلاین غذای مامزی شما میتونید به راحتی و در سریع ترین زمان ممکن غذای مورد
@@ -25,6 +25,33 @@
     <Favorites>
 
     </Favorites>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- MOST ORDERED RESTAURANTS -->
+
+    <h3 dir="rtl" class="text-right txt header">
+      <strong>
+        پرسفارش ترین ها
+      </strong>
+    </h3>
+    <div class="row m-0 d-flex justify-content-center flex-lg-nowrap Restaurant-Card-Container">
+      <RestaurantCard class="col-lg-3 col-md-4 col-sm-6 col-12 m-1">
+
+      </RestaurantCard>
+      <RestaurantCard class="col-lg-3 col-md-4 col-sm-6 col-12 m-1">
+
+      </RestaurantCard>
+      <RestaurantCard class="col-lg-3 col-md-4 col-sm-6 col-12 m-1">
+      </RestaurantCard>
+      <RestaurantCard class="col-lg-3 col-md-4 col-sm-6 col-12 m-1">
+      </RestaurantCard>
+    </div>
+    <br>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -44,5 +71,12 @@
     background-color: white;
     height: 100%;
     display: block;
+  }
+
+  .header {
+    margin-right: 70px;
+  }
+  .Restaurant-Card-Container{
+    padding: 70px;
   }
 </style>

@@ -6,7 +6,7 @@
       </strong>
     </h3>
     <br>
-    <div class="favorites-container d-flex justify-content-center row" dir="rtl">
+    <div class="favorites-container d-flex justify-content-center row m-0" dir="rtl">
       <div class="card col-lg-2 col-md-3 col-sm-5 col-5 p-0 m-2">
         <div class="card-body p-0">
           <button class="btn bg-transparent p-0">
