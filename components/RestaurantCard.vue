@@ -3,6 +3,7 @@
     <div class="card txt">
       <div class="card-header p-0">
         <img src="@/static/restaurant-01.jpg" class="card-img-top">
+        <i class="far fa-heart heart"></i>
       </div>
       <div class="card-body text-right" dir="rtl">
         <h4>
@@ -63,5 +64,12 @@
   img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+  }
+  .heart{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 25px;
+    color: white;
   }
 </style>

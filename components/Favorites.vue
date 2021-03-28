@@ -139,7 +139,6 @@
     margin-right: 70px;
   }
   span {
-    /*text-shadow: 1px 1px #000000;*/
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   }
 </style>

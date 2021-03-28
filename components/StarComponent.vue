@@ -4,7 +4,7 @@
       <span class="fas fa-star f-size checked"></span>
       <span class="fas fa-star f-size checked"></span>
       <span class="fas fa-star f-size checked"></span>
-      <span class="fas fa-star f-size "></span>
+      <span class="fa fa-star-half-o f-size checked "></span>
     </div>
 </template>
 

@@ -53,6 +53,10 @@
   .search-field input::placeholder{
     color: #c3c3c3;
   }
+  .search-field input:focus{
+    box-shadow: none;
+    border:none;
+  }
   .txt{
     font-family: "IRANSans Medium";
   }
