@@ -46,7 +46,7 @@
     </div>
     <br>
     <br>
-    <div class="row m-0 d-flex justify-content-center flex-lg-nowrap Restaurant-Card-Container">
+<!--    <div class="row m-0 d-flex justify-content-center flex-lg-nowrap Restaurant-Card-Container">
       <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
 
       </RestaurantCard>
@@ -57,7 +57,10 @@
       </RestaurantCard>
       <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
       </RestaurantCard>
-    </div>
+    </div> -->
+    <RestaurantSwiper>
+
+    </RestaurantSwiper>
     <br>
     <br>
     <br>
@@ -68,10 +71,10 @@
 
   import MSwiper from "./mSwiper";
   import Favorites from "./Favorites";
-
+  import RestaurantSwiper from "./RestaurantSwiper";
   export default {
     name: "mainBody",
-    components: {Favorites, MSwiper},
+    components: {Favorites, MSwiper,RestaurantSwiper},
   }
 </script>
 

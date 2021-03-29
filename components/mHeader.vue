@@ -10,11 +10,11 @@
         <!--        <img src="@/static/mamzi_logo.png" height="50px" class="w-auto header-logo">-->
         <a href="#" class="header-logo"></a>
       </div>
-      <div class="col-2 row d-flex justify-content-center align-items-center">
-        <button class="btn bg-transparent signup">
+      <div class="col-2 row d-flex justify-content-center align-items-center m-0 flex-nowrap">
+        <button class="btn bg-transparent signup text-nowrap">
           ثبت نام
         </button>
-        <button class="btn btn-outline-danger">
+        <button class="btn btn-outline-danger ">
           ورود
         </button>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container">
+  <div class="swiper-container swiper1">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -14,14 +14,14 @@
       </div>
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination pagination1"></div>
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-button-next text-white"></div>
 
     <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+<!--    <div class="swiper-scrollbar"></div>-->
   </div>
 </template>
 
@@ -29,15 +29,20 @@
   import Swiper, {Navigation, Pagination} from 'swiper'
   import 'swiper/swiper-bundle.css'
 
-  Swiper.use([Navigation, Pagination])
+  Swiper.use([Navigation, Pagination]);
 
   export default {
     name: "mSwiper",
+    data() {
+      return {
+        windowWidth: 0
+      }
+    },
     mounted() {
-      new Swiper('.swiper-container', {
+      new Swiper('.swiper1', {
         loop: true,
         pagination: {
-          el: '.swiper-pagination',
+          el: '.pagination1',
         },
         navigation: {
           nextEl: '.swiper-button-next',
@@ -46,13 +51,13 @@
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-      })
+      });
     }
   }
 </script>
 
 <style scoped>
-  .swiper-container {
+  .swiper1 {
     width: 85%;
     height: auto;
     border-radius: 20px;
