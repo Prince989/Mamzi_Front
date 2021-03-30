@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="swiper-container swiper2" dir="rtl">
+    <div class="swiper-container" :class="'swiper'+ swiperIndex" dir="rtl">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!--        <div class="row m-0 d-flex justify-content-center flex-lg-nowrap Restaurant-Card-Container">-->
@@ -10,12 +10,13 @@
 
           </RestaurantCard>
         </div>
-        <!--        </div>-->
       </div>
-      <div class="swiper-pagination pagination2"></div>
+<!--      <div class="swiper-button-next text-danger" :class="'swiper-button-next' + swiperIndex"></div>-->
+<!--      <div class="swiper-button-prev text-danger" :class="'swiper-button-prev' + swiperIndex"></div>-->
+<!--      <div class="swiper-pagination pagination2"></div>-->
     </div>
     <div class="d-flex justify-content-center" dir="rtl">
-<!--      <div class="swiper-pagination pagination2"></div>-->
+      <div class="swiper-pagination" :class="'pagination'+ swiperIndex"></div>
     </div>
   </div>
 </template>
@@ -27,6 +28,7 @@
   Swiper.use([Navigation, Pagination]);
   export default {
     name: "RestaurantSwiper",
+    props:['swiperIndex'],
     data() {
       return {
         restaurants: [{'name': 'جوجه طلایی'}, {'name': 'کباب طلایی'}, {'name': 'برگر طلایی'}, {'name': 'پیتزا طلایی'},
@@ -78,33 +80,29 @@
         this.readySwiper();
       },
       readySwiper() {
-        this.swip = new Swiper('.swiper2', {
+        this.swip = new Swiper('.swiper'+ this.swiperIndex, {
           loop: false,
           observer: true,
           observeParents: true,
           pagination: {
-            el: '.pagination2',
+            el: '.pagination'+ this.swiperIndex,
           },
-          /*,
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+            nextEl: '.swiper-button-next' + this.swiperIndex,
+            prevEl: '.swiper-button-prev' + this.swiperIndex,
+          },/*
           scrollbar: {
             el: '.swiper-scrollbar',
           },*/
         });
         console.log("SwiperReady");
-        this.swip.update();
-        setTimeout(()=>{
-          let v = document.getElementsByClassName('swiper-pagination-bullet');
-          v.forEach(function (x) {
-            x.classList.add('spp');
-            console.log("vvv");
-          });
-          this.swip.update();
-        },5000);
-
+        // this.swip.update();
+      },
+      removeElementsByClass(className) {
+        var elements = document.getElementsByClassName(className);
+        while (elements.length > 0) {
+          elements[0].parentNode.removeChild(elements[0]);
+        }
       }
       ,
       indexer(t) {
@@ -117,9 +115,9 @@
         this.arrange();
       }
       // this.hasClass();
-/*      for(let x in v){
-        x.classList[0].add('spp');
-      }*/
+      /*      for(let x in v){
+              x.classList[0].add('spp');
+            }*/
     },
     created() {
       if (process.browser) {
@@ -142,7 +140,9 @@
   .swiper-pagination-bullet {
     margin: 3px
   }
+  .testSwiper{
 
+  }
   .spp {
     margin: 15px !important;
   }
@@ -150,7 +150,8 @@
   .swiper-pagination * {
     margin: 3px
   }
-  .pagination2{
+
+  .pagination2 {
 
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container swiper1">
+  <div class="swiper-container swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -14,7 +14,7 @@
       </div>
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination pagination1"></div>
+    <div class="swiper-pagination pagination0"></div>
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev text-white"></div>
@@ -39,10 +39,10 @@
       }
     },
     mounted() {
-      new Swiper('.swiper1', {
+      new Swiper('.swiper', {
         loop: true,
         pagination: {
-          el: '.pagination1',
+          el: '.pagination0',
         },
         navigation: {
           nextEl: '.swiper-button-next',
@@ -57,7 +57,7 @@
 </script>
 
 <style scoped>
-  .swiper1 {
+  .swiper {
     width: 85%;
     height: auto;
     border-radius: 20px;

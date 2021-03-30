@@ -46,21 +46,33 @@
     </div>
     <br>
     <br>
-<!--    <div class="row m-0 d-flex justify-content-center flex-lg-nowrap Restaurant-Card-Container">
-      <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
-
-      </RestaurantCard>
-      <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
-
-      </RestaurantCard>
-      <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
-      </RestaurantCard>
-      <RestaurantCard class="col-lg-3 col-md-4 col-sm-5 col-12 m-1">
-      </RestaurantCard>
-    </div> -->
-    <RestaurantSwiper>
+    <RestaurantSwiper swiper-index="1">
 
     </RestaurantSwiper>
+    <br>
+    <br>
+    <br>
+    <div>
+      <h3 dir="rtl" class="float-right text-right txt header">
+        <strong>
+          جدید ترین ها
+        </strong>
+      </h3>
+      <a href="#" class="text-decoration-none float-left link-more txt d-none d-lg-block d-sm-block d-md-block">
+        <i class="fas fa-angle-left"></i>
+        <span>
+          رستوران های بیشتر
+        </span>
+      </a>
+    </div>
+    <br>
+    <br>
+    <RestaurantSwiper swiper-index="2">
+
+    </RestaurantSwiper>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
