@@ -11,9 +11,6 @@
           </RestaurantCard>
         </div>
       </div>
-<!--      <div class="swiper-button-next text-danger" :class="'swiper-button-next' + swiperIndex"></div>-->
-<!--      <div class="swiper-button-prev text-danger" :class="'swiper-button-prev' + swiperIndex"></div>-->
-<!--      <div class="swiper-pagination pagination2"></div>-->
     </div>
     <div class="d-flex justify-content-center" dir="rtl">
       <div class="swiper-pagination" :class="'pagination'+ swiperIndex"></div>
@@ -33,7 +30,7 @@
       return {
         restaurants: [{'name': 'جوجه طلایی'}, {'name': 'کباب طلایی'}, {'name': 'برگر طلایی'}, {'name': 'پیتزا طلایی'},
           {'name': 'فست فود طلایی'}, {'name': 'جوجه رنگی'}, {'name': 'کباب رنگی'}, {'name': 'برگر رنگی'}, {'name': 'پیتزا رنگی'}, {'name': 'جوجه نگین'},
-          {'name': 'کباب نگین'}],
+          {'name': 'کباب نگین'},{'name': 'برگ طلایی'},,{'name': 'برگ رنگی'},],
         windowWidth: 0,
         x: [],
         y: [],
@@ -90,21 +87,10 @@
           navigation: {
             nextEl: '.swiper-button-next' + this.swiperIndex,
             prevEl: '.swiper-button-prev' + this.swiperIndex,
-          },/*
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },*/
+          }
         });
         console.log("SwiperReady");
-        // this.swip.update();
       },
-      removeElementsByClass(className) {
-        var elements = document.getElementsByClassName(className);
-        while (elements.length > 0) {
-          elements[0].parentNode.removeChild(elements[0]);
-        }
-      }
-      ,
       indexer(t) {
         return this.y[t];
       },
@@ -114,10 +100,6 @@
         this.windowWidth = window.innerWidth;
         this.arrange();
       }
-      // this.hasClass();
-      /*      for(let x in v){
-              x.classList[0].add('spp');
-            }*/
     },
     created() {
       if (process.browser) {
